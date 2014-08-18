@@ -7,7 +7,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -19,7 +18,14 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:20px;
+  margin:0 0 20px;
+  color: #aaa;
+}
+
+h1 b{
+  color: #000;
+  font-size: 28px;
 }
 
 h2 {
@@ -43,7 +49,7 @@ a small {
   display:block;
 }
 
-.wrapper {
+body > div {
   width:860px;
   margin:0 auto;
 }
@@ -160,7 +166,21 @@ header ul a strong {
 section {
   width:500px;
   float:right;
-  padding-bottom:50px;
+}
+
+ul{
+  margin: 4em 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  border-bottom: 1px #aaa dashed;
+}
+
+li:last-child{
+  border: none;
+  padding-top: 20px;
 }
 
 small {
@@ -183,7 +203,7 @@ footer {
 
 @media print, screen and (max-width: 960px) {
   
-  div.wrapper {
+  body > div {
     width:auto;
     margin:0;
   }
@@ -225,7 +245,7 @@ footer {
     padding:0;
   }
   
-  header ul, header p.view {
+  header ul, header a {
     position:static;
   }
   
