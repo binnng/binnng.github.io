@@ -3,6 +3,8 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
+  text-align: center;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -100,9 +102,11 @@ img {
 }
 
 header {
-  width:270px;
+  /*width:270px;
   float:left;
   position:fixed;
+*/
+  text-align: center;
 }
 
 header ul {
@@ -201,6 +205,36 @@ footer {
   bottom:50px;
 }
 
+section{
+  float: none;
+  width: auto;
+  display: none;
+}
+section.body{
+  display: block;
+  border: 1px solid #e5e5e5;
+  border-width: 1px 0 0;
+  padding: 20px 0;
+  margin: 0 0 20px;
+}
+
+.wechat img{
+  width:120px;
+}
+
+.avatar{
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 1em auto;
+}
+
+.avatar img{
+  width: 80px;
+}
+
 @media print, screen and (max-width: 960px) {
   
   body > div {
@@ -215,7 +249,7 @@ footer {
   }
   
   header {
-    padding-right:320px;
+    /*padding-right:320px;*/
   }
   
   section {
