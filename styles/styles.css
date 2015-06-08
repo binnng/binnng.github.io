@@ -314,3 +314,53 @@ section.body hr{
     color:#444;
   }
 }
+
+
+
+.avatar{
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-backface-visibility: visible!important;
+  backface-visibility: visible!important;
+  position: relative;
+  animation-name: flipOutY;
+  -webkit-animation-name: flipOutY;
+
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes flipOutY{
+  0%{-webkit-transform:perspective(600px) rotateY(-90deg)}
+  40%{-webkit-transform:perspective(600px) rotateY(10deg)}
+  70%{-webkit-transform:perspective(600px) rotateY(-10deg)}
+  100%{-webkit-transform:perspective(600px) rotateY(0deg)}
+}
+
+@keyframes flipOutY{
+  0%{transform:perspective(600px) rotateY(-90deg)}
+  40%{transform:perspective(600px) rotateY(10deg)}
+  70%{transform:perspective(600px) rotateY(-10deg)}
+  100%{transform:perspective(600px) rotateY(0deg)}
+}
+
+
+.avatar i{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #000;
+  top: 20px;
+  border-radius: 999px;
+}
+
+.avatar i:first-of-type{
+  left: 24px;
+}
+.avatar i:last-of-type{
+  
+  left: 48px;
+}
