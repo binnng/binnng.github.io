@@ -16,12 +16,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-weibo:before { content: "\e600"; }
-.icon-play:before { content: "\e601"; }
+.icon-weibo:before { content: "\e66c"; }
 .icon-iconsf:before { content: "\e602"; }
-.icon-github:before { content: "\e603"; }
-.icon-pause:before { content: "\e604"; }
-.icon-loading:before { content: "\e605"; }
+.icon-icongithub:before { content: "\e719"; }
+.icon-loading:before { content: "\e8ad"; }
+.icon-play:before { content: "\e67b"; }
+.icon-pause:before { content: "\e72b"; }
+.icon-juan:before { content: "\e603"; }
+.icon-aixinjuanzeng:before { content: "\e615"; }
 
 .body .iconfont{
   font-size: 1.4em;
@@ -30,6 +32,25 @@
   border-radius: 3em;
   padding: 8px;
   margin-right: 4px;
+}
+
+
+.juan{
+  font-size: 1.8em;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  margin-left: -60px;
+  /*cursor: pointer;*/
+  width: 120px;
+}
+
+.juan .wechat{
+  display: none;
+}
+
+.juan:hover .wechat{
+  display: block;
 }
 
 
@@ -258,12 +279,12 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
+/*footer {
   width:270px;
   float:left;
   position:fixed;
   bottom:50px;
-}
+}*/
 
 section{
   float: none;
