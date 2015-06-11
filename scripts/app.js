@@ -80,7 +80,7 @@
     }
 
     elAudio.appendChild(audio);
-    
+
     status("loading");
     audio.addEventListener("playing", function() {
       status("pause");
@@ -99,6 +99,6 @@
 
 
   // 百度统计
-  document.write(unescape("%3Cscript src='" + "//hm.baidu.com/h.js%3F0808592e3802a8d59e78e2e601623a22'%3E%3C/script%3E"));
+  document.write(unescape("%3Cscript src='//hm.baidu.com/h.js%3F0808592e3802a8d59e78e2e601623a22'%3E%3C/script%3E"));
 
 })(document, window);
