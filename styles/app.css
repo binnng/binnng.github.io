@@ -262,6 +262,7 @@ section.body hr{
 
 .wechat img{
   width:120px;
+  min-height: 120px;
 }
 
 .avatar{
