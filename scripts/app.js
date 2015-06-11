@@ -67,6 +67,37 @@
   onResize();
 
 
+  var elAudio = $(".audio")[0];
+  var audio = document.createElement("audio");
+  var isAudioInit = false;
+  var initAudio = function() {
+    audio.src = "//binnng.github.io/fm/statics/xlaq.mp3";
+    audio.loop = "loop";
+
+
+    function status(s) {
+      elAudio.setAttribute("data-status", s);
+    }
+
+    elAudio.appendChild(audio);
+    
+    status("loading");
+    audio.addEventListener("playing", function() {
+      status("pause");
+    });
+    audio.addEventListener("pause", function() {
+      status("play");
+    });
+
+    audio.play();
+
+    isAudioInit = true;
+  };
+
+  $(".play")[0].addEventListener("click", function() {(isAudioInit ? audio.play.bind(audio) : initAudio)()});
+  $(".pause")[0].addEventListener("click", audio.pause.bind(audio));
+
+
   // 百度统计
   document.write(unescape("%3Cscript src='" + "//hm.baidu.com/h.js%3F0808592e3802a8d59e78e2e601623a22'%3E%3C/script%3E"));
 
